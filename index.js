@@ -4,8 +4,9 @@ const path= require('path');
 const server = express();
 server.use(express.static('./www'));
 server.get('/',(req,res)=>{
-    res.sendFile(
-        path.resolve('./view/index.html')
-    )
+    res.send('ok');
+    // res.sendFile(
+    //     path.resolve('./view/index.html')
+    // )
 });
-server.listen(5000);
+server.listen(80);
