@@ -1,0 +1,300 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    transform-style: preserve-3d;
+    font-family: "微软雅黑","苹方",'Voltaire', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Voltaire', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.navbar-static-top{
+    background:none;
+    border:none;
+    /*z-index: 999;*/
+}
+header .main{
+    width:100%;
+    margin-top:30px;
+}
+header .main .box1{
+    width:42px;
+    height:32px;
+    border-radius:4px;
+    background:#00a0af;
+    margin:18px auto 8px 0;
+    padding-left:9px;
+}
+header .main .box1 .glyphicon-menu-hamburger{
+    color:#fff;
+    font-size:24px;
+    text-align:center;
+    line-height: 31px;
+}
+header .main .box2{
+    display:none;
+}
+.banner{
+    width:100%;
+    background:url("../img/banner22.jpg") no-repeat 0 0;
+    background-attachment:fixed;
+    background-size:cover;
+    padding-bottom:26%;
+}
+.banner .logo{
+    width:100px;
+    height:100px;
+    font-family: 'Voltaire', sans-serif;
+    background:#013040;
+    border-radius: 50%;
+    border:6px double #fff;
+    margin:15% auto 0;
+    color:#fff;
+    font-size:60px;
+    text-align: center;
+    line-height: 88px;
+}
+.banner h2{
+    color:#fff;
+    font-size:45px;
+    text-align: center;
+    margin-top:2%;
+}
+.banner h4{
+    color:#fff;
+    font-size:22px;
+    text-align: center;
+    margin-top:2%;
+}
+.mine{
+    width:100%;
+    margin:5% auto;
+}
+.main .about{
+    margin-bottom:4%;
+}
+h2{
+    width:100%;
+    color: #00a0af;
+    margin:0 auto 5%;
+    text-align: center;
+    font-size:30px;
+}
+
+.mine .about p{
+    margin:0 auto 5%;
+    width:60%;
+    color: #777;
+    text-align: center;
+    line-height: 28px;
+}
+.mine .list span{
+    display:block;
+    width:100%;
+    color:#2F455D;
+    font-size: 24px;
+}
+.mine .list .line{
+    width:60%;
+    height:4px;
+    margin:4% auto 4% 0;
+    background:#00a0af;
+}
+.mine .list p{
+    width:100%;
+    line-height: 28px;
+    color:#777;
+}
+.main .box2{
+    transition: all 1.5s;
+}
+.main .box2 li{
+    position: relative;
+}
+.main .box2 li .write{
+    width:120%;
+    height:0;
+    background:#fff;
+    position: absolute;
+    bottom:-10px;
+    left:-10%;
+    transition: all 0.3s;
+}
+.main .box2 li:hover .write{
+    height:5px;
+    transform:translateY(15px);
+}
+.learned{
+    width:100%;
+    background:#013040;
+    padding:10.7% 0 10.7%;
+}
+.learned p{
+    margin:0 auto;
+    width:60%;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+}
+.learned .content{
+    width:100%;
+    margin-top:5%;
+}
+.learned .content .text .icon{
+    width:64px;
+    height:64px;
+    border-radius: 50%;
+    border:1px solid #fff;
+    text-align: center;
+    line-height: 71px;
+    transition: all 1s;
+}
+.learned .content .text:hover .icon{
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.8);
+    background:#00a0af;
+}
+.learned .content .text .icon span{
+    font-size: 24px;
+    color:#fff;
+}
+.learned .content .text{
+    margin-top:2%;
+    padding-right:0;
+}
+.learned .content .text .words h2{
+    text-align: left;
+    color:#fff;
+    font-size: 26px;
+}
+.learned .content .text .words p{
+    text-align: left;
+    color:#fff;
+    width:100%;
+}
+.works{
+    width:100%;
+    margin-top:10px;
+}
+.works h2{
+    width:100%;
+    margin-top:5%;
+    margin-bottom:5%;
+    font-size:40px;
+}
+.works .box{
+    padding:2%;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    position:relative;
+}
+.works .box h2{
+    width:100%;
+    font-size: 28px;
+    color:#fff;
+    border-bottom:2px solid rgba(250,250,250,0.6);
+    padding:5%;
+    position:absolute;
+    top:0;
+    right:0;
+    display:none;
+}
+.works .box p{
+    width:80%;
+    color:#fff;
+    text-align: center;
+    line-height: 200%;
+    position:absolute;
+    top:50%;
+    left:10%;
+    display:none;
+}
+.works .box:hover h2{
+    display:block;
+}
+.works .box:hover p{
+    display:block;
+}
+.works .box img{
+    transition:transform 2s;
+}
+.works .box:hover img{
+    transform:scale(1.5,1.5);
+}
+.works .box .box1{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display:flex;
+}
+.works .box .mod{
+    width:25%;
+    height:100%;
+}
+.works .box .mod .black{
+    width:0;
+    height:100%;
+    margin:0 auto;
+    background:rgba(0,0,0,0.2);
+    transition: all 2s;
+}
+.works .box:hover .mod .black{
+    width:100%;
+}
+.works a{
+    display:block;
+    padding:0 1% 1% 0;
+}
+.end{
+    margin-top:10%;
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media screen and (min-width: 768px){
+    header .main .box1{
+        margin:18px 0 8px auto;
+        background:none;
+        border:1px solid #ddd;
+    }
+    header .main .box1 .glyphicon-menu-hamburger{
+        color:#ddd;
+    }
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media screen and (min-width: 992px){
+    header .main .box1{
+        display: none;
+    }
+    header .main .box2{
+        display:flex;
+        justify-content: space-around;
+        margin-top:10px;
+    }
+    header .main .box2 li a{
+        color:#fff;
+        font-size:18px;
+        text-align: center;
+    }
+    h2{
+        font-size:40px;
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media screen and (min-width: 1200px){
+    .banner .logo{
+        width:120px;
+        height:120px;
+        font-size:66px;
+        line-height: 100px;
+    }
+}
